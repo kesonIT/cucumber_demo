@@ -61,6 +61,7 @@ public class UserServiceTest {
 	public void return_user_in_white_list() throws Throwable {
 		boolean allInWhiteList = true;
 		for (String user : userInWhiteList) {
+			System.out.println("----------" + user);
 			allInWhiteList = UserService.isUserInWhiteList(user);
 			if (!allInWhiteList) {
 				break;
